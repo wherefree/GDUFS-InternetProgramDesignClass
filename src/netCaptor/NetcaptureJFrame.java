@@ -137,7 +137,7 @@ public class NetcaptureJFrame extends javax.swing.JFrame {
                    // if(msg.contains(null)){ //只显示和某类IP地址有关的包信息，首次运行可去掉限制条件
                         jTextArea1.append(msg+"\n");
                         try { //可进一步查看包中的数据部分
-                            String submsg=new String(packet.data,0,packet.data.length,"utf-8");
+                            String submsg=new String(packet.data,0,packet.data.length,"GB2312");
                             //if(submsg.contains(null))  //显示这类包中含某关键词的包数据
                                 jTextArea1.append("数据部分: \n"+submsg+"\n\n");
                         } catch (IOException ex) { }
